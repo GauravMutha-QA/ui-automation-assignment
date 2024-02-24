@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AllTestsSuite" verbose="1">
+	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="firstname" value="andrea2"></parameter>
+	<parameter name="lastname" value="pirlo2"></parameter>
+	<parameter name="email" value="fibrugadamou-8812@yopmail.com"></parameter>
+	<parameter name="password" value="hello@123"></parameter>
+	<parameter name="confirmPassword" value="hello@123"></parameter>
+	<test name="AllTests">
+		<groups>
+			<run>
+				<exclude name="positiveTests" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.softwaretestingboard.magento.SignUpTests" />
+			<class name="com.softwaretestingboard.magento.LogInTests" />
+			<class name="com.softwaretestingboard.magento.WishlistTests" />
+			<class name="com.softwaretestingboard.magento.EditWishlistTests" />
+			<class name="com.softwaretestingboard.magento.CompareListTests" />
+			<class name="com.softwaretestingboard.magento.CheckoutTests" />
+			<class name="com.softwaretestingboard.magento.MultipleCheckoutTests" />
+			<class name="com.softwaretestingboard.magento.OrderVerifyTests" />
+		</classes>
+	</test>
+
+</suite>

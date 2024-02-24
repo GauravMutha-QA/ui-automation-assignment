@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CheckoutTestsSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="CheckoutTests(failed)">
+    <parameter name="password" value="hello@123"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="email" value="tretoiqueneppu-6899@yopmail.com"/>
+    <classes>
+      <class name="com.softwaretestingboard.magento.CheckoutTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="positiveCheckoutTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.softwaretestingboard.magento.CheckoutTests -->
+    </classes>
+  </test> <!-- CheckoutTests(failed) -->
+</suite> <!-- Failed suite [CheckoutTestsSuite] -->

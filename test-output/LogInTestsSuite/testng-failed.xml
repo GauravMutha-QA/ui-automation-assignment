@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LogInTestsSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LogInTests(failed)">
+    <parameter name="password" value="hello@1"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="email" value="lobroinnocramma-5722@yopmail.com"/>
+    <classes>
+      <class name="com.softwaretestingboard.magento.LogInTests">
+        <methods>
+          <include name="positiveLogInTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.softwaretestingboard.magento.LogInTests -->
+    </classes>
+  </test> <!-- LogInTests(failed) -->
+</suite> <!-- Failed suite [LogInTestsSuite] -->

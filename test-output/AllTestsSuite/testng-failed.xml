@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AllTestsSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="firstname" value="andrea2"/>
+  <parameter name="password" value="hello@123"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="confirmPassword" value="hello@123"/>
+  <parameter name="email" value="praunullirebo-6965@yopmail.com"/>
+  <parameter name="lastname" value="pirlo2"/>
+  <test thread-count="5" name="AllTests(failed)">
+    <groups>
+      <run>
+        <include name="positiveTests"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.softwaretestingboard.magento.MultipleCheckoutTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="positiveMultipleCheckoutTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.softwaretestingboard.magento.MultipleCheckoutTests -->
+      <class name="com.softwaretestingboard.magento.SignUpTests">
+        <methods>
+          <include name="positiveSignUpTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.softwaretestingboard.magento.SignUpTests -->
+      <class name="com.softwaretestingboard.magento.OrderVerifyTests">
+        <methods>
+          <include name="positiveOrderVerifyTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.softwaretestingboard.magento.OrderVerifyTests -->
+    </classes>
+  </test> <!-- AllTests(failed) -->
+</suite> <!-- Failed suite [AllTestsSuite] -->

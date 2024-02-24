@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [WishlistTestsSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="WishlistTests(failed)">
+    <parameter name="password" value="hello@123"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="email" value="lobroinnocramma-5722@yopmail.com"/>
+    <classes>
+      <class name="com.softwaretestingboard.magento.WishlistTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="positiveWishlistTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.softwaretestingboard.magento.WishlistTests -->
+    </classes>
+  </test> <!-- WishlistTests(failed) -->
+</suite> <!-- Failed suite [WishlistTestsSuite] -->
